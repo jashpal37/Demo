@@ -7,7 +7,7 @@ app.use(express.static('public'));
 require("./db/conn");
 
 app.get('/', (req, res) => {
-    res.send("Hello World!");
+    res.send("Hello from Express");
 });
 
 app.post('/register', async (req, res) => {
